@@ -66,7 +66,7 @@
                             <outlet property="delegate" destination="fkb-dA-Ip1" id="Coe-39-sEA"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="home-7" id="epQ-I6-XOv"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="epQ-I6-XOv"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBG-8Z-LLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,7 +198,4 @@
             <point key="canvasLocation" x="120" y="-549"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="home-7" width="30" height="30"/>
-    </resources>
 </document>

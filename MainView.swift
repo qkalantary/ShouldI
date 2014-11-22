@@ -7,24 +7,32 @@
 //
 
 import UIKit
-import Foundation
 
 class MainView: UIViewController {
     
     
     //    @IBOutlet var swipeView: UIView
     //   let swipeRec = UISwipeGestureRecognizer()
-
     
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        let getQuestionURL = NSURL(string: "http://localhost:8888/shouldI/get/questionOnLoad.php")
+        let sharedSession = NSURLSession.sharedSession()
+        let downLoadTask: NSURLSessionDownloadTask =
+        sharedSession.downloadTaskWithURL(getQuestionURL!,
+            completionHandler: { (location: NSURL!, response:
+                NSURLResponse!, error: NSError!) -> Void in
+                
+                var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
+                println(urlContents);
+        })
+        downLoadTask.resume()
+        
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
+        
         
         var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
@@ -57,7 +65,6 @@ class MainView: UIViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 println("Swiped right")
-                getQuestion()
                 
                 
             case UISwipeGestureRecognizerDirection.Down:
@@ -75,33 +82,6 @@ class MainView: UIViewController {
         }
     }
     
-    func HTTPsendRequest(request: NSMutableURLRequest,
-        callback: (String, String?) -> Void) {
-            let task = NSURLSession.sharedSession()
-                .dataTaskWithRequest(request) {
-                    (data, response, error) -> Void in
-                    if error {
-                        callback(“,”, error.localizedDescription)
-                    } else {
-                        callback(NSString(data: data,
-                            encoding: NSUTF8StringEncoding), nil)
-                    }
-            }
-            
-            task.resume()
-    }
-    func HTTPGet(url: String, callback: (String, String?) -> Void) {
-        var request = NSMutableURLRequest(URL: NSURL(string: url))
-        HTTPsendRequest(request, callback)
-    }
-    
-    HTTPGet(“http://localhost:8888/shouldI/get/questionOnLoad.php") {
-    (data: String, error: String?) -> Void in
-    if error {
-    println(error)
-    } else {
-    println(data)
-    }
     
     
     
