@@ -14,6 +14,9 @@
 		184CBCB41A181A4A0018CEA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184CBCB31A181A4A0018CEA5 /* Images.xcassets */; };
 		184CBCB71A181A4A0018CEA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184CBCB51A181A4A0018CEA5 /* LaunchScreen.xib */; };
 		184CBCC31A181A4A0018CEA5 /* ShouldITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCC21A181A4A0018CEA5 /* ShouldITests.swift */; };
+		184CBCCF1A1820820018CEA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCCE1A1820820018CEA5 /* MainView.swift */; };
+		184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */; };
+		184CBCD31A183D8E0018CEA5 /* HomeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCD21A183D8E0018CEA5 /* HomeBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		184CBCBC1A181A4A0018CEA5 /* ShouldITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShouldITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184CBCC11A181A4A0018CEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184CBCC21A181A4A0018CEA5 /* ShouldITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldITests.swift; sourceTree = "<group>"; };
+		184CBCCE1A1820820018CEA5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
+		184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestion.swift; sourceTree = "<group>"; };
+		184CBCD21A183D8E0018CEA5 /* HomeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				184CBCA91A181A4A0018CEA5 /* AppDelegate.swift */,
 				184CBCAE1A181A4A0018CEA5 /* ViewController.swift */,
 				184CBCB01A181A4A0018CEA5 /* Main.storyboard */,
+				184CBCD21A183D8E0018CEA5 /* HomeBase.swift */,
+				184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */,
+				184CBCCE1A1820820018CEA5 /* MainView.swift */,
 				184CBCB31A181A4A0018CEA5 /* Images.xcassets */,
 				184CBCB51A181A4A0018CEA5 /* LaunchScreen.xib */,
 				184CBCAB1A181A4A0018CEA5 /* ShouldI.xcdatamodeld */,
@@ -216,6 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				184CBCAF1A181A4A0018CEA5 /* ViewController.swift in Sources */,
+				184CBCD31A183D8E0018CEA5 /* HomeBase.swift in Sources */,
+				184CBCCF1A1820820018CEA5 /* MainView.swift in Sources */,
+				184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */,
 				184CBCAD1A181A4A0018CEA5 /* ShouldI.xcdatamodeld in Sources */,
 				184CBCAA1A181A4A0018CEA5 /* AppDelegate.swift in Sources */,
 			);
