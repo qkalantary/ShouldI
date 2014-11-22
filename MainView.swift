@@ -17,7 +17,10 @@ class MainView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let getQuestionURL = NSURL(string: "http://localhost:8888/shouldI/get/questionOnLoad.php")
+
+        
+
+        let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
         let sharedSession = NSURLSession.sharedSession()
         let downLoadTask: NSURLSessionDownloadTask =
         sharedSession.downloadTaskWithURL(getQuestionURL!,
@@ -29,6 +32,9 @@ class MainView: UIViewController {
         })
         downLoadTask.resume()
         
+        
+
+                
         var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeRight)
@@ -65,6 +71,17 @@ class MainView: UIViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 println("Swiped right")
+/*let getNewUserURL = NSURL(string: "http://localhost:8888/shouldI/get/newUser.php")
+let sharedSession = NSURLSession.sharedSession()
+let downLoadTask2: NSURLSessionDownloadTask =
+sharedSession.downloadTaskWithURL(getNewUserURL!,
+    completionHandler: { (location: NSURL!, response:
+        NSURLResponse!, error: NSError!) -> Void in
+        
+        var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
+        println(urlContents);
+})
+downLoadTask.resume()*/
                 
                 
             case UISwipeGestureRecognizerDirection.Down:
