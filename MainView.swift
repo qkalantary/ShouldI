@@ -71,17 +71,18 @@ class MainView: UIViewController {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 println("Swiped right")
-/*let getNewUserURL = NSURL(string: "http://localhost:8888/shouldI/get/newUser.php")
-let sharedSession = NSURLSession.sharedSession()
-let downLoadTask2: NSURLSessionDownloadTask =
-sharedSession.downloadTaskWithURL(getNewUserURL!,
-    completionHandler: { (location: NSURL!, response:
-        NSURLResponse!, error: NSError!) -> Void in
+                //this should only be run once when the user opens the app for the first time. This returns an Int being the userID which should be stored in internal memory
+                let getNewUserURL = NSURL(string: "http://horatiothomas.com/shouldI/get/newUser.php")
+                let sharedSession = NSURLSession.sharedSession()
+                let downLoadTask2: NSURLSessionDownloadTask =
+                    sharedSession.downloadTaskWithURL(getNewUserURL!,
+                    completionHandler: { (location: NSURL!, response:
+                    NSURLResponse!, error: NSError!) -> Void in
         
-        var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
-        println(urlContents);
-})
-downLoadTask.resume()*/
+                    var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
+                    println(urlContents!);
+                })
+                downLoadTask2.resume()
                 
                 
             case UISwipeGestureRecognizerDirection.Down:
