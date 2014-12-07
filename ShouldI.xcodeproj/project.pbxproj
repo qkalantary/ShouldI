@@ -17,6 +17,8 @@
 		184CBCCF1A1820820018CEA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCCE1A1820820018CEA5 /* MainView.swift */; };
 		184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */; };
 		184CBCD31A183D8E0018CEA5 /* HomeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCD21A183D8E0018CEA5 /* HomeBase.swift */; };
+		6FCD05C91A33EFF600234129 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD05C81A33EFF600234129 /* Post.swift */; };
+		6FCD05CD1A340ECB00234129 /* ObPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD05CC1A340ECB00234129 /* ObPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,10 @@
 		184CBCCE1A1820820018CEA5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
 		184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestion.swift; sourceTree = "<group>"; };
 		184CBCD21A183D8E0018CEA5 /* HomeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBase.swift; sourceTree = "<group>"; };
+		6FCD05C81A33EFF600234129 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		6FCD05CA1A340ECA00234129 /* ShouldI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShouldI-Bridging-Header.h"; sourceTree = "<group>"; };
+		6FCD05CB1A340ECB00234129 /* ObPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObPost.h; sourceTree = "<group>"; };
+		6FCD05CC1A340ECB00234129 /* ObPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				184CBCB51A181A4A0018CEA5 /* LaunchScreen.xib */,
 				184CBCAB1A181A4A0018CEA5 /* ShouldI.xcdatamodeld */,
 				184CBCA71A181A4A0018CEA5 /* Supporting Files */,
+				6FCD05C81A33EFF600234129 /* Post.swift */,
+				6FCD05CB1A340ECB00234129 /* ObPost.h */,
+				6FCD05CC1A340ECB00234129 /* ObPost.m */,
+				6FCD05CA1A340ECA00234129 /* ShouldI-Bridging-Header.h */,
 			);
 			path = ShouldI;
 			sourceTree = "<group>";
@@ -226,9 +236,11 @@
 			files = (
 				184CBCAF1A181A4A0018CEA5 /* ViewController.swift in Sources */,
 				184CBCD31A183D8E0018CEA5 /* HomeBase.swift in Sources */,
+				6FCD05CD1A340ECB00234129 /* ObPost.m in Sources */,
 				184CBCCF1A1820820018CEA5 /* MainView.swift in Sources */,
 				184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */,
 				184CBCAD1A181A4A0018CEA5 /* ShouldI.xcdatamodeld in Sources */,
+				6FCD05C91A33EFF600234129 /* Post.swift in Sources */,
 				184CBCAA1A181A4A0018CEA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,9 +364,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ShouldI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShouldI/ShouldI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -362,9 +377,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ShouldI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ShouldI/ShouldI-Bridging-Header.h";
 			};
 			name = Release;
 		};
