@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
-        var params = ["userID":"1", "something": "else"] as Dictionary<String, String>
+        var params = ["userID":"10"] as Dictionary<String, String>
         
         var err: NSError?
         request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)

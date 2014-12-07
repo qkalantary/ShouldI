@@ -24,8 +24,8 @@ class MainView: UIViewController {
         //getQuestionResults.uploadTasks
         
 
-        let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
-        //let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/post/questionData.php");
+        //let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
+        let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/post/questionData.php");
         
         let sharedSession = NSURLSession.sharedSession()
         let downLoadTask: NSURLSessionDownloadTask =
@@ -34,7 +34,7 @@ class MainView: UIViewController {
                 NSURLResponse!, error: NSError!) -> Void in
                 
                 var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
-                //println(urlContents);
+                println(urlContents);
         })
         downLoadTask.resume()
         
