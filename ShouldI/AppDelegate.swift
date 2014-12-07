@@ -23,11 +23,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        var navigationBarAppearace = UINavigationBar.appearance()
-
+        var returnValue: Bool? = NSUserDefaults.standardUserDefaults().boolForKey("first")
+        println("returnValue:")
+        println(returnValue)
+        if returnValue! == false      //Check for first run of app
+        {
+            println("first launch:")
+            var navigationBarAppearace = UINavigationBar.appearance()
+            // navigationBarAppearace.tintColor = uicolorFromHex(0xffffff)
+            navigationBarAppearace.barTintColor = uicolorFromHex(0xBF0404)
+            //println(returnValue)
+            returnValue = true; //Default value
+        } else {
+            println("later launch:")
+            var navigationBarAppearace = UINavigationBar.appearance()
+            // navigationBarAppearace.tintColor = uicolorFromHex(0xffffff)
+            navigationBarAppearace.barTintColor = uicolorFromHex(0xF2F2F2)
+            //println(returnValue)
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "first")
+            NSUserDefaults.standardUserDefaults().synchronize()
+    }
+        
+        
+     //   var navigationBarAppearace = UINavigationBar.appearance()
        // navigationBarAppearace.tintColor = uicolorFromHex(0xffffff)
-        navigationBarAppearace.barTintColor = uicolorFromHex(0xBF0404)
+      //  navigationBarAppearace.barTintColor = uicolorFromHex(0xBF0404)
         
         return true
     }
