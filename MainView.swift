@@ -18,13 +18,15 @@ class MainView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       /* let getQuestionResults = Post()
-        getQuestionResults.setData(10)
-        getQuestionResults.setPostURL("http://horatiothomas.com/shouldI/post/questionData.php")
-        getQuestionResults.uploadTasks*/
+      //  let getQuestionResults : ObPost = ObPost()
+       // getQuestionResults.setData(10)
+       // getQuestionResults.setPostURL("http://horatiothomas.com/shouldI/post/questionData.php")
+        //getQuestionResults.uploadTasks
         
 
         let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
+        //let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/post/questionData.php");
+        
         let sharedSession = NSURLSession.sharedSession()
         let downLoadTask: NSURLSessionDownloadTask =
         sharedSession.downloadTaskWithURL(getQuestionURL!,
@@ -32,7 +34,7 @@ class MainView: UIViewController {
                 NSURLResponse!, error: NSError!) -> Void in
                 
                 var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
-                println(urlContents);
+                //println(urlContents);
         })
         downLoadTask.resume()
         

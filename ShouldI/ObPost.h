@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface ObPost : NSObject
-
+-(id)initWithName:(NSData *)data_ url:(NSURL *)url_;
+- (void)setData:(int)data;
+- (void)setPostURL:(NSString*)url;
 @end
