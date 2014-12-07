@@ -89,8 +89,8 @@
 				184CBCAE1A181A4A0018CEA5 /* ViewController.swift */,
 				184CBCB01A181A4A0018CEA5 /* Main.storyboard */,
 				184CBCD21A183D8E0018CEA5 /* HomeBase.swift */,
-				184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */,
 				184CBCCE1A1820820018CEA5 /* MainView.swift */,
+				184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */,
 				184CBCB31A181A4A0018CEA5 /* Images.xcassets */,
 				184CBCB51A181A4A0018CEA5 /* LaunchScreen.xib */,
 				184CBCAB1A181A4A0018CEA5 /* ShouldI.xcdatamodeld */,
@@ -421,6 +421,7 @@
 				184CBCC81A181A4B0018CEA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		184CBCC91A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "ShouldITests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +430,7 @@
 				184CBCCB1A181A4B0018CEA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
