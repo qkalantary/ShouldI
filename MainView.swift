@@ -18,6 +18,10 @@ class MainView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       /* let getQuestionResults = Post()
+        getQuestionResults.setData(10)
+        getQuestionResults.setPostURL("http://horatiothomas.com/shouldI/post/questionData.php")
+        getQuestionResults.uploadTasks*/
         
 
         let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
