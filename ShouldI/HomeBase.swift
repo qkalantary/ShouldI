@@ -77,11 +77,13 @@ class HomeBase: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("poll", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
+        /*
         if(indexPath.row % 2 == 0){
-            //cell.backgroundColor = UIColor(red: 240/255.0, green: 199/255.0, blue: 85/255.0, alpha: 1.0)
+            cell.backgroundColor = UIColor(red: 240/255.0, green: 199/255.0, blue: 85/255.0, alpha: 1.0)
         } else{
-            //cell.backgroundColor = UIColor(red: 226/255.0, green: 173/255.0, blue: 59/255.0, alpha: 1.0)
+            cell.backgroundColor = UIColor(red: 226/255.0, green: 173/255.0, blue: 59/255.0, alpha: 1.0)
         }
+*/
         
         //cell.backgroundColor = UIColor.clearColor()//UIColor(red: 255/255.0, green: 255/255.0, blue: 117/255.0, alpha: 1.0)
         if cell.respondsToSelector("setSeparatorInset:") {
