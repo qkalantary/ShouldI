@@ -17,19 +17,6 @@
 		184CBCCF1A1820820018CEA5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCCE1A1820820018CEA5 /* MainView.swift */; };
 		184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */; };
 		184CBCD31A183D8E0018CEA5 /* HomeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCD21A183D8E0018CEA5 /* HomeBase.swift */; };
-		18FCA3DA1A34FADA002DAEFA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3D81A34FADA002DAEFA /* Bolts.framework */; };
-		18FCA3DB1A34FADA002DAEFA /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3D91A34FADA002DAEFA /* Parse.framework */; };
-		18FCA3DD1A34FB08002DAEFA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3DC1A34FB08002DAEFA /* AudioToolbox.framework */; };
-		18FCA3DF1A34FB0D002DAEFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3DE1A34FB0D002DAEFA /* CFNetwork.framework */; };
-		18FCA3E11A34FB14002DAEFA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3E01A34FB14002DAEFA /* CoreGraphics.framework */; };
-		18FCA3E31A34FB1C002DAEFA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3E21A34FB1C002DAEFA /* CoreLocation.framework */; };
-		18FCA3E51A34FB28002DAEFA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3E41A34FB28002DAEFA /* libz.dylib */; };
-		18FCA3E71A34FB30002DAEFA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3E61A34FB30002DAEFA /* MobileCoreServices.framework */; };
-		18FCA3E91A34FB37002DAEFA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3E81A34FB37002DAEFA /* QuartzCore.framework */; };
-		18FCA3EB1A34FB3E002DAEFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3EA1A34FB3E002DAEFA /* Security.framework */; };
-		18FCA3ED1A34FB45002DAEFA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3EC1A34FB45002DAEFA /* StoreKit.framework */; };
-		18FCA3EF1A34FB4C002DAEFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FCA3EE1A34FB4C002DAEFA /* SystemConfiguration.framework */; };
-		6FCD05C91A33EFF600234129 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD05C81A33EFF600234129 /* Post.swift */; };
 		6FCD05CD1A340ECB00234129 /* ObPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD05CC1A340ECB00234129 /* ObPost.m */; };
 /* End PBXBuildFile section */
 
@@ -58,19 +45,6 @@
 		184CBCCE1A1820820018CEA5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
 		184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestion.swift; sourceTree = "<group>"; };
 		184CBCD21A183D8E0018CEA5 /* HomeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBase.swift; sourceTree = "<group>"; };
-		18FCA3D81A34FADA002DAEFA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		18FCA3D91A34FADA002DAEFA /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		18FCA3DC1A34FB08002DAEFA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		18FCA3DE1A34FB0D002DAEFA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		18FCA3E01A34FB14002DAEFA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		18FCA3E21A34FB1C002DAEFA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		18FCA3E41A34FB28002DAEFA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		18FCA3E61A34FB30002DAEFA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		18FCA3E81A34FB37002DAEFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		18FCA3EA1A34FB3E002DAEFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		18FCA3EC1A34FB45002DAEFA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		18FCA3EE1A34FB4C002DAEFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6FCD05C81A33EFF600234129 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		6FCD05CA1A340ECA00234129 /* ShouldI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShouldI-Bridging-Header.h"; sourceTree = "<group>"; };
 		6FCD05CB1A340ECB00234129 /* ObPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObPost.h; sourceTree = "<group>"; };
 		6FCD05CC1A340ECB00234129 /* ObPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObPost.m; sourceTree = "<group>"; };
@@ -81,18 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FCA3EF1A34FB4C002DAEFA /* SystemConfiguration.framework in Frameworks */,
-				18FCA3ED1A34FB45002DAEFA /* StoreKit.framework in Frameworks */,
-				18FCA3EB1A34FB3E002DAEFA /* Security.framework in Frameworks */,
-				18FCA3E91A34FB37002DAEFA /* QuartzCore.framework in Frameworks */,
-				18FCA3E71A34FB30002DAEFA /* MobileCoreServices.framework in Frameworks */,
-				18FCA3E51A34FB28002DAEFA /* libz.dylib in Frameworks */,
-				18FCA3E31A34FB1C002DAEFA /* CoreLocation.framework in Frameworks */,
-				18FCA3E11A34FB14002DAEFA /* CoreGraphics.framework in Frameworks */,
-				18FCA3DF1A34FB0D002DAEFA /* CFNetwork.framework in Frameworks */,
-				18FCA3DD1A34FB08002DAEFA /* AudioToolbox.framework in Frameworks */,
-				18FCA3DB1A34FADA002DAEFA /* Parse.framework in Frameworks */,
-				18FCA3DA1A34FADA002DAEFA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,16 +71,6 @@
 		184CBC9B1A181A4A0018CEA5 = {
 			isa = PBXGroup;
 			children = (
-				18FCA3EE1A34FB4C002DAEFA /* SystemConfiguration.framework */,
-				18FCA3EC1A34FB45002DAEFA /* StoreKit.framework */,
-				18FCA3EA1A34FB3E002DAEFA /* Security.framework */,
-				18FCA3E81A34FB37002DAEFA /* QuartzCore.framework */,
-				18FCA3E61A34FB30002DAEFA /* MobileCoreServices.framework */,
-				18FCA3E41A34FB28002DAEFA /* libz.dylib */,
-				18FCA3E21A34FB1C002DAEFA /* CoreLocation.framework */,
-				18FCA3E01A34FB14002DAEFA /* CoreGraphics.framework */,
-				18FCA3DE1A34FB0D002DAEFA /* CFNetwork.framework */,
-				18FCA3DC1A34FB08002DAEFA /* AudioToolbox.framework */,
 				184CBCA61A181A4A0018CEA5 /* ShouldI */,
 				184CBCBF1A181A4A0018CEA5 /* ShouldITests */,
 				184CBCA51A181A4A0018CEA5 /* Products */,
@@ -137,8 +89,6 @@
 		184CBCA61A181A4A0018CEA5 /* ShouldI */ = {
 			isa = PBXGroup;
 			children = (
-				18FCA3D81A34FADA002DAEFA /* Bolts.framework */,
-				18FCA3D91A34FADA002DAEFA /* Parse.framework */,
 				184CBCA91A181A4A0018CEA5 /* AppDelegate.swift */,
 				184CBCAE1A181A4A0018CEA5 /* ViewController.swift */,
 				184CBCB01A181A4A0018CEA5 /* Main.storyboard */,
@@ -149,7 +99,6 @@
 				184CBCB51A181A4A0018CEA5 /* LaunchScreen.xib */,
 				184CBCAB1A181A4A0018CEA5 /* ShouldI.xcdatamodeld */,
 				184CBCA71A181A4A0018CEA5 /* Supporting Files */,
-				6FCD05C81A33EFF600234129 /* Post.swift */,
 				6FCD05CB1A340ECB00234129 /* ObPost.h */,
 				6FCD05CC1A340ECB00234129 /* ObPost.m */,
 				6FCD05CA1A340ECA00234129 /* ShouldI-Bridging-Header.h */,
@@ -288,7 +237,6 @@
 				184CBCCF1A1820820018CEA5 /* MainView.swift in Sources */,
 				184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */,
 				184CBCAD1A181A4A0018CEA5 /* ShouldI.xcdatamodeld in Sources */,
-				6FCD05C91A33EFF600234129 /* Post.swift in Sources */,
 				184CBCAA1A181A4A0018CEA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
