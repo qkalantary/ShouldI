@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4nV-oL-QkJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -9,7 +10,7 @@
             <objects>
                 <tableViewController id="fkb-dA-Ip1" customClass="HomeBase" customModule="Antswer_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="171" sectionHeaderHeight="22" sectionFooterHeight="22" id="gMa-eg-kMH">
-                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -63,18 +64,16 @@
                     <tabBarItem key="tabBarItem" title="Home" id="epQ-I6-XOv"/>
                     <navigationItem key="navigationItem" id="SvV-xS-dJG"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBG-8Z-LLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="-154"/>
+            <point key="canvasLocation" x="1356" y="-168"/>
         </scene>
         <!--Home-->
         <scene sceneID="MCE-yd-Ljv">
             <objects>
                 <navigationController id="c8m-Lw-Hfb" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="eVx-16-JWI"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6V1-83-FEm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,7 +91,6 @@
             <objects>
                 <navigationController id="7Y7-WG-cdD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Main Screen" id="ifm-dw-3Kq"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vok-xP-uK2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -103,7 +101,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3MF-dU-CXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="584" y="-972"/>
+            <point key="canvasLocation" x="236" y="-1072"/>
         </scene>
         <!--Main Screen-->
         <scene sceneID="zuM-rx-Ppf">
@@ -114,35 +112,41 @@
                         <viewControllerLayoutGuide type="bottom" id="BwK-pf-fxt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Go-iL-CrV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDP-Hh-Diq">
-                                <rect key="frame" x="207" y="366" width="30" height="30"/>
-                                <state key="normal" title="Yes">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICG-L3-4tu">
-                                <rect key="frame" x="68" y="366" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-9w-oPx">
+                                <rect key="frame" x="180" y="154" width="30" height="30"/>
                                 <state key="normal" title="No">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIK-w6-r5C">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should I go to the park?" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtR-g7-nem">
-                                        <rect key="frame" x="73" y="108" width="185" height="136"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="0.61568627450980395" alpha="0.0" colorSpace="deviceRGB"/>
-                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd2-Ze-a8G">
+                                <rect key="frame" x="180" y="72" width="240" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXN-OG-NUI">
+                                <rect key="frame" x="390" y="154" width="30" height="30"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" red="0.74901960779999999" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vd2-Ze-a8G" firstAttribute="leading" secondItem="1Go-iL-CrV" secondAttribute="leadingMargin" constant="30" id="00a-SI-NnA"/>
+                            <constraint firstItem="vd2-Ze-a8G" firstAttribute="top" secondItem="8Pv-zr-AVS" secondAttribute="bottom" constant="20" id="2sF-Mb-YL8"/>
+                            <constraint firstItem="VKp-9w-oPx" firstAttribute="top" secondItem="vd2-Ze-a8G" secondAttribute="bottom" constant="100" id="7nx-Ax-yNf"/>
+                            <constraint firstAttribute="centerY" secondItem="vd2-Ze-a8G" secondAttribute="centerY" constant="80.5" id="Llk-1e-Td4"/>
+                            <constraint firstItem="BXN-OG-NUI" firstAttribute="top" secondItem="vd2-Ze-a8G" secondAttribute="bottom" constant="100" id="VKY-Um-qWv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BXN-OG-NUI" secondAttribute="trailing" constant="50" id="VNR-7R-7SH"/>
+                            <constraint firstItem="VKp-9w-oPx" firstAttribute="leading" secondItem="1Go-iL-CrV" secondAttribute="leadingMargin" constant="50" id="dZT-zV-cKC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main Screen" id="Nyi-II-wsW"/>
                     <toolbarItems/>
@@ -155,11 +159,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZr-s8-Lq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="-995"/>
+            <point key="canvasLocation" x="997" y="-1103"/>
         </scene>
         <!--Add Question-->
         <scene sceneID="dmS-9K-A6L">
@@ -170,7 +173,7 @@
                         <viewControllerLayoutGuide type="bottom" id="i1T-Qd-FOB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KRC-9i-518">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="daC-FA-TzS">
@@ -193,24 +196,24 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="z1Z-OY-3Px">
                         <barButtonItem key="backBarButtonItem" title="Cancel" id="r9m-Xn-QjA"/>
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="ZwY-Vu-ZZI"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="ZwY-Vu-ZZI">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="questionEntry" destination="daC-FA-TzS" id="CZv-4y-I2T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdR-ib-0yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="-1310"/>
+            <point key="canvasLocation" x="1790" y="-1311"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6nV-Ft-J6G">
             <objects>
                 <tabBarController id="4nV-oL-QkJ" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Tpb-xe-58E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -223,7 +226,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoL-ab-Eb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="-549"/>
+            <point key="canvasLocation" x="-368" y="-553"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.1196113174" green="0.37684164660000002" blue="0.82863794189999995" alpha="0.0" colorSpace="calibratedRGB"/>

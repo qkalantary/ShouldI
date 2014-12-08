@@ -26,9 +26,12 @@ class MainView: UIViewController {
         sharedSession.downloadTaskWithURL(getQuestionURL!,
             completionHandler: { (location: NSURL!, response:
                 NSURLResponse!, error: NSError!) -> Void in
-                
+                if let location2 = location {
                 var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
                 println(urlContents);
+                } else {
+                println("location was null")
+                }
         })
         downLoadTask.resume()
         
