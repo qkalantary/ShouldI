@@ -66,7 +66,15 @@ class MainView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func no(sender: UIButton) {
+        println("no")
+    }
+    
+    @IBAction func yes(sender: UIButton) {
+        println("yes")
+    }
+    
+/*
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -102,7 +110,7 @@ class MainView: UIViewController {
             }
         }
     }
-    
+  */  
     
     
     

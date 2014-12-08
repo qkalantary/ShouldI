@@ -121,6 +121,9 @@
                                     <color key="titleColor" red="0.74901960779999999" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="no:" destination="B83-nB-055" eventType="touchUpInside" id="wDr-rr-Rx4"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd2-Ze-a8G">
                                 <rect key="frame" x="180" y="72" width="240" height="74"/>
@@ -135,6 +138,9 @@
                                     <color key="titleColor" red="0.74901960779999999" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="yes:" destination="B83-nB-055" eventType="touchUpInside" id="8hq-ec-J64"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,10 +204,14 @@
                         <barButtonItem key="backBarButtonItem" title="Cancel" id="r9m-Xn-QjA"/>
                         <barButtonItem key="rightBarButtonItem" title="Post" id="ZwY-Vu-ZZI">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="posted:" destination="0iW-ce-m6m" id="7eS-ot-w6B"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="postQueston" destination="ZwY-Vu-ZZI" id="eeO-KX-sHj"/>
                         <outlet property="questionEntry" destination="daC-FA-TzS" id="CZv-4y-I2T"/>
                     </connections>
                 </viewController>
