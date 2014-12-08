@@ -166,7 +166,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         {
             println("first launch:")
             var navigationBarAppearace = UINavigationBar.appearance()
-            // navigationBarAppearace.tintColor = uicolorFromHex(0xffffff)
+            navigationBarAppearace.tintColor = uicolorFromHex(0xffffff)
             navigationBarAppearace.barTintColor = uicolorFromHex(0xBF0404)
             //println(returnValue)
             returnValue = true; //Default value
