@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "184CBCA31A181A4A0018CEA5"
-               BuildableName = "ShouldI.app"
-               BlueprintName = "ShouldI"
-               ReferencedContainer = "container:ShouldI.xcodeproj">
+               BuildableName = "Antswer.temp_caseinsensitive_rename.app"
+               BlueprintName = "Antswer"
+               ReferencedContainer = "container:Antswer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "184CBCBB1A181A4A0018CEA5"
-               BuildableName = "ShouldITests.xctest"
-               BlueprintName = "ShouldITests"
-               ReferencedContainer = "container:ShouldI.xcodeproj">
+               BuildableName = "Antswer.temp_caseinsensitive_renameTests.xctest"
+               BlueprintName = "AntswerTests"
+               ReferencedContainer = "container:Antswer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "184CBCBB1A181A4A0018CEA5"
-               BuildableName = "ShouldITests.xctest"
-               BlueprintName = "ShouldITests"
-               ReferencedContainer = "container:ShouldI.xcodeproj">
+               BuildableName = "Antswer.temp_caseinsensitive_renameTests.xctest"
+               BlueprintName = "AntswerTests"
+               ReferencedContainer = "container:Antswer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "184CBCA31A181A4A0018CEA5"
-            BuildableName = "ShouldI.app"
-            BlueprintName = "ShouldI"
-            ReferencedContainer = "container:ShouldI.xcodeproj">
+            BuildableName = "Antswer.temp_caseinsensitive_rename.app"
+            BlueprintName = "Antswer"
+            ReferencedContainer = "container:Antswer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "184CBCA31A181A4A0018CEA5"
-            BuildableName = "ShouldI.app"
-            BlueprintName = "ShouldI"
-            ReferencedContainer = "container:ShouldI.xcodeproj">
+            BuildableName = "Antswer.temp_caseinsensitive_rename.app"
+            BlueprintName = "Antswer"
+            ReferencedContainer = "container:Antswer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "184CBCA31A181A4A0018CEA5"
-            BuildableName = "ShouldI.app"
-            BlueprintName = "ShouldI"
-            ReferencedContainer = "container:ShouldI.xcodeproj">
+            BuildableName = "Antswer.temp_caseinsensitive_rename.app"
+            BlueprintName = "Antswer"
+            ReferencedContainer = "container:Antswer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

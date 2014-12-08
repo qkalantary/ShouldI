@@ -31,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		184CBCA41A181A4A0018CEA5 /* ShouldI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShouldI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184CBCA41A181A4A0018CEA5 /* Antswer.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antswer.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184CBCA81A181A4A0018CEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184CBCA91A181A4A0018CEA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		184CBCAC1A181A4A0018CEA5 /* ShouldI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShouldI.xcdatamodel; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		184CBCB11A181A4A0018CEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		184CBCB31A181A4A0018CEA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		184CBCB61A181A4A0018CEA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		184CBCBC1A181A4A0018CEA5 /* ShouldITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShouldITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184CBCBC1A181A4A0018CEA5 /* Antswer.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Antswer.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		184CBCC11A181A4A0018CEA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184CBCC21A181A4A0018CEA5 /* ShouldITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldITests.swift; sourceTree = "<group>"; };
 		184CBCCE1A1820820018CEA5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		184CBC9B1A181A4A0018CEA5 = {
 			isa = PBXGroup;
 			children = (
-				184CBCA61A181A4A0018CEA5 /* ShouldI */,
+				184CBCA61A181A4A0018CEA5 /* Antswer */,
 				184CBCBF1A181A4A0018CEA5 /* ShouldITests */,
 				184CBCA51A181A4A0018CEA5 /* Products */,
 			);
@@ -80,13 +80,13 @@
 		184CBCA51A181A4A0018CEA5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				184CBCA41A181A4A0018CEA5 /* ShouldI.app */,
-				184CBCBC1A181A4A0018CEA5 /* ShouldITests.xctest */,
+				184CBCA41A181A4A0018CEA5 /* Antswer.temp_caseinsensitive_rename.app */,
+				184CBCBC1A181A4A0018CEA5 /* Antswer.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		184CBCA61A181A4A0018CEA5 /* ShouldI */ = {
+		184CBCA61A181A4A0018CEA5 /* Antswer */ = {
 			isa = PBXGroup;
 			children = (
 				184CBCA91A181A4A0018CEA5 /* AppDelegate.swift */,
@@ -103,6 +103,7 @@
 				6FCD05CC1A340ECB00234129 /* ObPost.m */,
 				6FCD05CA1A340ECA00234129 /* ShouldI-Bridging-Header.h */,
 			);
+			name = Antswer;
 			path = ShouldI;
 			sourceTree = "<group>";
 		};
@@ -134,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		184CBCA31A181A4A0018CEA5 /* ShouldI */ = {
+		184CBCA31A181A4A0018CEA5 /* Antswer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 184CBCC61A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "ShouldI" */;
+			buildConfigurationList = 184CBCC61A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "Antswer" */;
 			buildPhases = (
 				184CBCA01A181A4A0018CEA5 /* Sources */,
 				184CBCA11A181A4A0018CEA5 /* Frameworks */,
@@ -146,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = ShouldI;
+			name = Antswer;
 			productName = ShouldI;
-			productReference = 184CBCA41A181A4A0018CEA5 /* ShouldI.app */;
+			productReference = 184CBCA41A181A4A0018CEA5 /* Antswer.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		184CBCBB1A181A4A0018CEA5 /* ShouldITests */ = {
+		184CBCBB1A181A4A0018CEA5 /* AntswerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 184CBCC91A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "ShouldITests" */;
+			buildConfigurationList = 184CBCC91A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "AntswerTests" */;
 			buildPhases = (
 				184CBCB81A181A4A0018CEA5 /* Sources */,
 				184CBCB91A181A4A0018CEA5 /* Frameworks */,
@@ -164,9 +165,9 @@
 			dependencies = (
 				184CBCBE1A181A4A0018CEA5 /* PBXTargetDependency */,
 			);
-			name = ShouldITests;
+			name = AntswerTests;
 			productName = ShouldITests;
-			productReference = 184CBCBC1A181A4A0018CEA5 /* ShouldITests.xctest */;
+			productReference = 184CBCBC1A181A4A0018CEA5 /* Antswer.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 184CBC9F1A181A4A0018CEA5 /* Build configuration list for PBXProject "ShouldI" */;
+			buildConfigurationList = 184CBC9F1A181A4A0018CEA5 /* Build configuration list for PBXProject "Antswer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -200,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				184CBCA31A181A4A0018CEA5 /* ShouldI */,
-				184CBCBB1A181A4A0018CEA5 /* ShouldITests */,
+				184CBCA31A181A4A0018CEA5 /* Antswer */,
+				184CBCBB1A181A4A0018CEA5 /* AntswerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +255,7 @@
 /* Begin PBXTargetDependency section */
 		184CBCBE1A181A4A0018CEA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 184CBCA31A181A4A0018CEA5 /* ShouldI */;
+			target = 184CBCA31A181A4A0018CEA5 /* Antswer */;
 			targetProxy = 184CBCBD1A181A4A0018CEA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -367,7 +368,7 @@
 				);
 				INFOPLIST_FILE = ShouldI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Antswer.temp_caseinsensitive_rename;
 				SWIFT_OBJC_BRIDGING_HEADER = "ShouldI/ShouldI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -384,7 +385,7 @@
 				);
 				INFOPLIST_FILE = ShouldI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Antswer.temp_caseinsensitive_rename;
 				SWIFT_OBJC_BRIDGING_HEADER = "ShouldI/ShouldI-Bridging-Header.h";
 			};
 			name = Release;
@@ -403,8 +404,7 @@
 				);
 				INFOPLIST_FILE = ShouldITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShouldI.app/ShouldI";
+				PRODUCT_NAME = Antswer.temp_caseinsensitive_renameTests;
 			};
 			name = Debug;
 		};
@@ -418,15 +418,14 @@
 				);
 				INFOPLIST_FILE = ShouldITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShouldI.app/ShouldI";
+				PRODUCT_NAME = Antswer.temp_caseinsensitive_renameTests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		184CBC9F1A181A4A0018CEA5 /* Build configuration list for PBXProject "ShouldI" */ = {
+		184CBC9F1A181A4A0018CEA5 /* Build configuration list for PBXProject "Antswer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184CBCC41A181A4B0018CEA5 /* Debug */,
@@ -435,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		184CBCC61A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "ShouldI" */ = {
+		184CBCC61A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "Antswer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184CBCC71A181A4B0018CEA5 /* Debug */,
@@ -444,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		184CBCC91A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "ShouldITests" */ = {
+		184CBCC91A181A4B0018CEA5 /* Build configuration list for PBXNativeTarget "AntswerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				184CBCCA1A181A4B0018CEA5 /* Debug */,
