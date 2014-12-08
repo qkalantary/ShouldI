@@ -16,6 +16,9 @@ class AddQuestion: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
+
+        
         questionEntry.clearsOnInsertion = true
        // questionEntry.
       //  questionEntry.didBeginEditing

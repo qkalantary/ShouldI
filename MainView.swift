@@ -17,7 +17,7 @@ class MainView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+            self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
 
         let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
         

@@ -20,6 +20,7 @@ class HomeBase: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
 
         
         // Uncomment the following line to preserve selection between presentations

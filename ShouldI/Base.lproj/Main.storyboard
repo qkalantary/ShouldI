@@ -69,11 +69,11 @@
             </objects>
             <point key="canvasLocation" x="1164" y="-154"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="MCE-yd-Ljv">
             <objects>
                 <navigationController id="c8m-Lw-Hfb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eVx-16-JWI"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="eVx-16-JWI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6V1-83-FEm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
