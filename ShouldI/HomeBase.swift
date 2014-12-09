@@ -18,6 +18,10 @@ class HomeBase: UITableViewController {
         return UIColor(red:red, green:green, blue:blue, alpha:1.0)
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))

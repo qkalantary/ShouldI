@@ -112,7 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 */
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
+        /*
         
         var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/shouldI/post/answerQuestion.php")!)
         var session = NSURLSession.sharedSession()
@@ -155,8 +155,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         task.resume()
         
-        
-        
+
+        */
         
         
         var returnValue: Bool? = NSUserDefaults.standardUserDefaults().boolForKey("first")
