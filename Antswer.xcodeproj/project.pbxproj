@@ -21,6 +21,7 @@
 		18A4884D1A36120700263F13 /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A4884C1A36120700263F13 /* 120x120.png */; };
 		18A4884F1A36120C00263F13 /* 76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A4884E1A36120C00263F13 /* 76x76.png */; };
 		18A488511A36121300263F13 /* cutoutAnt.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A488501A36121300263F13 /* cutoutAnt.png */; };
+		18BCB5161A36A8F200F3FB2B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BCB5151A36A8F200F3FB2B /* Global.swift */; };
 		6FAD42DB1A368A3F00B9F087 /* feedbackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD42DA1A368A3F00B9F087 /* feedbackCell.swift */; };
 		6FCD05CD1A340ECB00234129 /* ObPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD05CC1A340ECB00234129 /* ObPost.m */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		18A4884C1A36120700263F13 /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
 		18A4884E1A36120C00263F13 /* 76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76x76.png; sourceTree = "<group>"; };
 		18A488501A36121300263F13 /* cutoutAnt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutoutAnt.png; sourceTree = "<group>"; };
+		18BCB5151A36A8F200F3FB2B /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		6FAD42DA1A368A3F00B9F087 /* feedbackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = feedbackCell.swift; path = ../feedbackCell.swift; sourceTree = "<group>"; };
 		6FCD05CA1A340ECA00234129 /* ShouldI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShouldI-Bridging-Header.h"; sourceTree = "<group>"; };
 		6FCD05CB1A340ECB00234129 /* ObPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObPost.h; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				6FAD42DA1A368A3F00B9F087 /* feedbackCell.swift */,
 				184CBCB01A181A4A0018CEA5 /* Main.storyboard */,
 				184CBCD21A183D8E0018CEA5 /* HomeBase.swift */,
+				18BCB5151A36A8F200F3FB2B /* Global.swift */,
 				182C65AD1A36483200A9E6E2 /* FrontEndPost.swift */,
 				184CBCCE1A1820820018CEA5 /* MainView.swift */,
 				184CBCD01A1830BC0018CEA5 /* AddQuestion.swift */,
@@ -259,6 +262,7 @@
 				184CBCD11A1830BC0018CEA5 /* AddQuestion.swift in Sources */,
 				184CBCAD1A181A4A0018CEA5 /* ShouldI.xcdatamodeld in Sources */,
 				184CBCAA1A181A4A0018CEA5 /* AppDelegate.swift in Sources */,
+				18BCB5161A36A8F200F3FB2B /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

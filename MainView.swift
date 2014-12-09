@@ -12,7 +12,6 @@ import UIKit
 class MainView: UIViewController {
     
     var questionID : String = ""
-    
     @IBOutlet weak var questionView: UITextView!
     //    @IBOutlet var swipeView: UIView
     //   let swipeRec = UISwipeGestureRecognizer()
@@ -35,7 +34,7 @@ class MainView: UIViewController {
                     dispatch_async(dispatch_get_main_queue(),{
                         if let urlContentsArray = urlContents?.componentsSeparatedByString(","){
                             if let questionID2 = urlContentsArray[0] as? String {
-                               println(questionID2)
+                               //println(questionID2)
                                 self.questionID = questionID2
                             }
                             if let question = urlContentsArray[1] as? String {
@@ -51,6 +50,23 @@ class MainView: UIViewController {
                 }
         })
         downLoadTask.resume()
+        
+        
+        let getNewUserURL = NSURL(string: "http://horatiothomas.com/shouldI/post/questionData.php")
+        let sharedSession2 = NSURLSession.sharedSession()
+        let downLoadTask2: NSURLSessionDownloadTask =
+        sharedSession2.downloadTaskWithURL(getNewUserURL!,
+            completionHandler: { (location: NSURL!, response:
+                NSURLResponse!, error: NSError!) -> Void in
+                
+                    var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
+                
+                    mainInstance.setName(urlContents!)
+                    println("Set Global Variables!!!!!!!!!!!!!!")
+                    println(urlContents!)
+                
+        })
+        downLoadTask2.resume()
         
         
 
@@ -96,9 +112,9 @@ class MainView: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
         var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            println("Response: \(response)")
+           // println("Response: \(response)")
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-            println("Body: \(strData)")
+           // println("Body: \(strData)")
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
             
@@ -114,7 +130,7 @@ class MainView: UIViewController {
                 if let parseJSON = json {
                     // Okay, the parsedJSON is here, let's get the value for 'success' out of it
                     var success = parseJSON["success"] as? Int
-                    println("Succes: \(success)")
+                  //  println("Succes: \(success)")
                 }
                 else {
                     // Woa, okay the json object was nil, something went worng. Maybe the server isn't running?
@@ -141,9 +157,9 @@ class MainView: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
         var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            println("Response: \(response)")
+         //   println("Response: \(response)")
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-            println("Body: \(strData)")
+         //   println("Body: \(strData)")
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
             

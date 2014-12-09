@@ -21,22 +21,18 @@ class HomeBase: UITableViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-
+    var count : Int = 0
+    var numberRows : Int = 0
+    var questArr : [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
+        println("View Loaded Here")
 
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-       
         tableView.backgroundColor = uicolorFromHex(0xBF0404)//UIColor(red: 255/255.0, green: 255/255.0, blue: 117/255.0, alpha: 1.0)
         tableView.separatorColor =  UIColor.blackColor()//UIColor(red: 0/255.0, green: 163/255.0, blue: 136/255.0, alpha: 1.0)
-
-        
+        self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
+      
         if self.tableView.respondsToSelector("setSeparatorInset:") {
             self.tableView.separatorInset = UIEdgeInsetsZero
         }
@@ -46,13 +42,35 @@ class HomeBase: UITableViewController {
         
         self.tableView.layoutIfNeeded()
 
+        
+            }
+    
+    override func viewWillAppear(animated: Bool) {
+        println("ViewWillAppear. I swear")
+        
+        var infoDummy : String = "Do I like pie?,4,3;should I go to the park,1,10"
+        infoDummy = mainInstance.name
+        //get this array
+        
+        var questionArray : [String] = infoDummy.componentsSeparatedByString(";")
+        println(questionArray)
+        numberRows = questionArray.count
+        questArr = questionArray
+        
+        /*
+        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            self.tableView.beginUpdates()
+            self.tableView.reloadData()
+            self.tableView.endUpdates()
+        })
+*/
             }
     
     override func viewDidAppear(animated: Bool) {
       //  print(self.parentViewController?.view)
      ///   self.tableView
      //   self.parentViewController?.view.backgroundColor = UIColor.blueColor()//
-
+//viewDidLoad()
     }
 
     
@@ -65,84 +83,34 @@ class HomeBase: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 3
+        return numberRows
     }
 
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("poll", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-        /*
-        if(indexPath.row % 2 == 0){
-            cell.backgroundColor = UIColor(red: 240/255.0, green: 199/255.0, blue: 85/255.0, alpha: 1.0)
-        } else{
-            cell.backgroundColor = UIColor(red: 226/255.0, green: 173/255.0, blue: 59/255.0, alpha: 1.0)
+        var cell:feedbackCell = self.tableView.dequeueReusableCellWithIdentifier("poll") as feedbackCell
+        var newArr : [String] = []
+        if (count < questArr.count) {
+            newArr = questArr[count].componentsSeparatedByString(",")
         }
-*/
-        
-        //cell.backgroundColor = UIColor.clearColor()//UIColor(red: 255/255.0, green: 255/255.0, blue: 117/255.0, alpha: 1.0)
-        if cell.respondsToSelector("setSeparatorInset:") {
-            cell.separatorInset = UIEdgeInsetsZero
+        if (newArr.count == 3) {
+        cell.questionView.text = newArr[0]
+        cell.yesNumber.text = newArr[1]
+        cell.noNumber.text = newArr[2]
         }
-        if cell.respondsToSelector("setLayoutMargins:") {
-            cell.layoutMargins = UIEdgeInsetsZero
-        }
+        count = count + 1
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
 
 }
