@@ -139,6 +139,7 @@ class MainView: UIViewController {
                 }
             }
             })
+        task.resume()
         viewDidLoad()
         println("no")
     }

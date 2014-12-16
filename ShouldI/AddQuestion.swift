@@ -19,7 +19,7 @@ class AddQuestion: UIViewController {
         self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
 
         
-        //questionEntry.clearsOnInsertion = true
+        questionEntry.clearsOnInsertion = true
        // questionEntry.
       //  questionEntry.didBeginEditing
         // Do any additional setup after loading the view.

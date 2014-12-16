@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4nV-oL-QkJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -69,6 +68,9 @@
                     <tabBarItem key="tabBarItem" title="Home" id="epQ-I6-XOv"/>
                     <navigationItem key="navigationItem" id="SvV-xS-dJG"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="homeView" destination="gMa-eg-kMH" id="Gye-rf-Ibl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lBG-8Z-LLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,8 +122,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-9w-oPx">
-                                <rect key="frame" x="180" y="154" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKp-9w-oPx">
+                                <rect key="frame" x="41" y="162" width="30" height="30"/>
                                 <state key="normal" title="No">
                                     <color key="titleColor" red="0.74901960779999999" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -130,15 +132,14 @@
                                     <action selector="no:" destination="B83-nB-055" eventType="touchUpInside" id="wDr-rr-Rx4"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd2-Ze-a8G">
-                                <rect key="frame" x="180" y="72" width="240" height="74"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vd2-Ze-a8G">
+                                <rect key="frame" x="41" y="80" width="240" height="74"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXN-OG-NUI">
-                                <rect key="frame" x="390" y="154" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXN-OG-NUI">
+                                <rect key="frame" x="251" y="162" width="30" height="30"/>
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" red="0.74901960779999999" green="0.015686274510000001" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,15 +150,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vd2-Ze-a8G" firstAttribute="leading" secondItem="1Go-iL-CrV" secondAttribute="leadingMargin" constant="30" id="00a-SI-NnA"/>
-                            <constraint firstItem="vd2-Ze-a8G" firstAttribute="top" secondItem="8Pv-zr-AVS" secondAttribute="bottom" constant="20" id="2sF-Mb-YL8"/>
-                            <constraint firstItem="VKp-9w-oPx" firstAttribute="top" secondItem="vd2-Ze-a8G" secondAttribute="bottom" constant="100" id="7nx-Ax-yNf"/>
-                            <constraint firstAttribute="centerY" secondItem="vd2-Ze-a8G" secondAttribute="centerY" constant="80.5" id="Llk-1e-Td4"/>
-                            <constraint firstItem="BXN-OG-NUI" firstAttribute="top" secondItem="vd2-Ze-a8G" secondAttribute="bottom" constant="100" id="VKY-Um-qWv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BXN-OG-NUI" secondAttribute="trailing" constant="50" id="VNR-7R-7SH"/>
-                            <constraint firstItem="VKp-9w-oPx" firstAttribute="leading" secondItem="1Go-iL-CrV" secondAttribute="leadingMargin" constant="50" id="dZT-zV-cKC"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main Screen" id="Nyi-II-wsW"/>
                     <toolbarItems/>
@@ -194,7 +186,7 @@
                                 <rect key="frame" x="16" y="72" width="282" height="364"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Write a good question">
+                                    <fragment content="Write a good yes/no question">
                                         <attributes>
                                             <color key="NSColor" red="0.60476817255434789" green="0.60476817255434789" blue="0.60476817255434789" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
