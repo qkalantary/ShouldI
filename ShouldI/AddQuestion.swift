@@ -75,6 +75,8 @@ class AddQuestion: UIViewController {
         
         task.resume()
         
+        
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

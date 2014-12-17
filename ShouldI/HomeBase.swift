@@ -22,6 +22,7 @@ class HomeBase: UITableViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
+    
     var count : Int = 0
     var numberRows : Int = 0
     var questArr : [String] = []
@@ -45,14 +46,14 @@ class HomeBase: UITableViewController {
         
         self.tableView.layoutIfNeeded()
         
-        var infoDummy : String = "Do I like pie?,4,3;should I go to the park,1,10"
-        infoDummy = mainInstance.name
-        //get this array
-        
-        var questionArray : [String] = infoDummy.componentsSeparatedByString(";")
-        println(questionArray)
-        numberRows = questionArray.count
-        questArr = questionArray
+//        var infoDummy : String = "Do I like pie?,4,3;should I go to the park,1,10"
+//        infoDummy = mainInstance.name
+//        //get this array
+//        
+//        var questionArray : [String] = infoDummy.componentsSeparatedByString(";")
+//        println(questionArray)
+//        numberRows = questionArray.count
+//        questArr = questionArray
 
         
             }
@@ -110,11 +111,11 @@ class HomeBase: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        println("cellForRowAtIndexPath called")
+        //println("cellForRowAtIndexPath called")
         var cell:feedbackCell = self.tableView.dequeueReusableCellWithIdentifier("poll") as feedbackCell
         var newArr : [String] = []
-        if (count < questArr.count) {
-            newArr = questArr[count].componentsSeparatedByString(",")
+        if (indexPath.row < questArr.count) {
+            newArr = questArr[indexPath.row].componentsSeparatedByString(",")
         }
         if (newArr.count == 3) {
         cell.questionView.text = newArr[0]
