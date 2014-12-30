@@ -33,11 +33,11 @@ class AddQuestion: UIViewController {
     @IBAction func posted(sender: UIBarButtonItem) {
         var questionToSend = self.questionEntry.text
         println(questionToSend)
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/shouldI/post/newQuestion.php")!)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/antswerAPI/post/newQuestion.php")!)
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
-        var params = ["userID":"10", "question": questionToSend] as Dictionary<String, String>
+        var params = ["userID":"10", "question": questionToSend, "latitude": "0", "longitude": "0"] as Dictionary<String, String>
         
         var err: NSError?
         request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &err)

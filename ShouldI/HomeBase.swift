@@ -103,11 +103,12 @@ class HomeBase: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if numberRows <= 0 {
-            return 0;
-        } else {
-            return numberRows - 1;
-        }
+//        if numberRows <= 0 {
+//            return 0;
+//        } else {
+//            return numberRows - 1;
+//        }
+        return 3
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -22,7 +22,7 @@ class MainView: UIViewController {
             self.navigationItem.titleView =  UIImageView(image: UIImage(named: "cutoutAnt.png"))
         
         
-        let getQuestionURL = NSURL(string: "http://horatiothomas.com/shouldI/get/questionOnLoad.php");
+        let getQuestionURL = NSURL(string: "http://horatiothomas.com/antswerAPI/get/questionOnLoad.php");
         
         let sharedSession = NSURLSession.sharedSession()
         let downLoadTask: NSURLSessionDownloadTask =
@@ -34,7 +34,7 @@ class MainView: UIViewController {
                     dispatch_async(dispatch_get_main_queue(),{
                         if let urlContentsArray = urlContents?.componentsSeparatedByString(","){
                             if let questionID2 = urlContentsArray[0] as? String {
-                               //println(questionID2)
+                               println(questionID2)
                                 self.questionID = questionID2
                             }
                             if let question = urlContentsArray[1] as? String {
@@ -52,18 +52,21 @@ class MainView: UIViewController {
         downLoadTask.resume()
         
         
-        let getNewUserURL = NSURL(string: "http://horatiothomas.com/shouldI/post/questionData.php")
+        let getNewUserURL = NSURL(string: "http://horatiothomas.com/antswerAPI/post/questionData.php")
         let sharedSession2 = NSURLSession.sharedSession()
         let downLoadTask2: NSURLSessionDownloadTask =
         sharedSession2.downloadTaskWithURL(getNewUserURL!,
             completionHandler: { (location: NSURL!, response:
                 NSURLResponse!, error: NSError!) -> Void in
-                
+                if let location3 = location {
                     var urlContents = NSString(contentsOfURL: location, encoding: NSUTF8StringEncoding, error: nil)
                 
                     mainInstance.setName(urlContents!)
                     println("Set Global Variables!!!!!!!!!!!!!!")
                     println(urlContents!)
+                } else {
+                println ("location3 is null")
+                }
                 
         })
         downLoadTask2.resume()
@@ -100,7 +103,7 @@ class MainView: UIViewController {
     }
     
     @IBAction func no(sender: UIButton) {
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/shouldI/post/answerQuestion.php")!)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/antswerAPI/post/answerQuestionNo.php")!)
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
@@ -146,7 +149,7 @@ class MainView: UIViewController {
     
     @IBAction func yes(sender: UIButton) {
         println(self.questionID)
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/shouldI/post/answerQuestion.php")!)
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://horatiothomas.com/antswerAPI/post/answerQuestionYes.php")!)
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
         
